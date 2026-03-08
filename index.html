@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cercetare prin Creație — Proiect Obiect Personal</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <h1>Cercetare prin Creație — Obiect Personal</h1>
+      <p>
+        Creezi un proiect, adaugi un obiect personal, apoi completezi pe rând cele 3 fotografii:
+        cadru natural, cadru neutru, cadru controlat.
+      </p>
+    </header>
+
+    <main class="container">
+      <section class="card">
+        <h2>1) Proiect</h2>
+        <form id="project-form" class="stack">
+          <label>
+            Nume proiect
+            <input id="project-name" required placeholder="Ex: Memorie afectivă și obiect" />
+          </label>
+          <label>
+            Obiect personal
+            <input id="object-name" required placeholder="Ex: Ceasul bunicului" />
+          </label>
+          <label>
+            Descriere scurtă (opțional)
+            <textarea id="project-description" rows="3" placeholder="Contextul general al proiectului"></textarea>
+          </label>
+          <button type="submit">Salvează proiect</button>
+        </form>
+      </section>
+
+      <section class="card">
+        <h2>2) Fotografii obligatorii (în ordine)</h2>
+        <p class="hint">Nu poți trece la următorul cadru până nu finalizezi complet cadrul curent.</p>
+        <ol id="frames" class="frame-list"></ol>
+      </section>
+
+      <section class="card">
+        <h2>3) Chestionar secvențial (obligatoriu)</h2>
+        <p class="hint" id="question-progress">Selectează un cadru activ pentru a începe.</p>
+
+        <div id="questionnaire" class="hidden">
+          <h3 id="active-frame-title"></h3>
+          <img id="photo-preview" class="photo-preview" alt="Previzualizare fotografie" />
+
+          <article class="question-box">
+            <p id="current-question" class="question"></p>
+            <label>
+              Răspuns (text)
+              <textarea id="answer-text" rows="4" placeholder="Răspunde aici..."></textarea>
+            </label>
+
+            <div class="audio-controls">
+              <button id="record-btn" type="button">Începe înregistrarea</button>
+              <button id="stop-btn" type="button" class="secondary" disabled>Oprește înregistrarea</button>
+              <button id="speech-btn" type="button" class="secondary">Dictare vocală (transcriere)</button>
+            </div>
+            <p id="recording-status" class="hint"></p>
+            <audio id="answer-audio" controls class="hidden"></audio>
+
+            <div class="actions">
+              <button id="save-next-btn" type="button">Salvează răspunsul și mergi mai departe</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>4) Export</h2>
+        <div class="actions">
+          <button id="export-json-btn" type="button">Exportă proiect (.json)</button>
+          <button id="reset-btn" type="button" class="danger">Reset complet</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
