@@ -1,3 +1,511 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="SOARE TOURING SRL – Transport persoane, excursii și închirieri autocar în Ploiești și împrejurimi. Călătorii confortabile, sigure și la prețuri accesibile." />
+  <meta name="keywords" content="transport persoane Ploiești, excursii autocar, închiriere microbuz Prahova, Soare Touring" />
+  <title>Soare Touring – Transport Persoane Ploiești</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════ HEADER ══════════════════════════════ -->
+  <header id="header">
+    <div class="container header-inner">
+      <a href="#hero" class="logo">
+        <div class="logo-icon">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="24" cy="24" r="10" fill="#F59E0B"/>
+            <line x1="24" y1="4"  x2="24" y2="10" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+            <line x1="24" y1="38" x2="24" y2="44" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+            <line x1="4"  y1="24" x2="10" y2="24" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+            <line x1="38" y1="24" x2="44" y2="24" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+            <line x1="9"  y1="9"  x2="13.5" y2="13.5" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+            <line x1="34.5" y1="34.5" x2="39" y2="39" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+            <line x1="39" y1="9"  x2="34.5" y2="13.5" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+            <line x1="13.5" y1="34.5" x2="9" y2="39" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="logo-brand">SOARE TOURING</span>
+          <span class="logo-tagline">S.R.L.</span>
+        </div>
+      </a>
+
+      <nav id="nav">
+        <ul>
+          <li><a href="#servicii">Servicii</a></li>
+          <li><a href="#despre">Despre noi</a></li>
+          <li><a href="#avantaje">De ce noi</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a href="tel:+40700000000" class="btn btn-primary header-cta">
+        <svg viewBox="0 0 20 20" fill="currentColor"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/></svg>
+        Sună acum
+      </a>
+
+      <button class="hamburger" id="hamburger" aria-label="Meniu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ══════════════════════════════ HERO ══════════════════════════════ -->
+  <section id="hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <span class="hero-badge">Operator licențiat ARR · Ploiești</span>
+      <h1>Călătorii sigure<br/><em>sub soarele</em> drumului</h1>
+      <p class="hero-subtitle">Transport persoane, excursii și închirieri microbuz în Ploiești și în întreaga țară. Profesionalism, punctualitate și confort la fiecare cursă.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary btn-lg">Solicită ofertă</a>
+        <a href="#servicii" class="btn btn-outline btn-lg">Serviciile noastre</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Descoperă mai mult</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════ BAND ══════════════════════════════ -->
+  <div class="band">
+    <div class="container band-inner">
+      <div class="band-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        <span>Licențiat ARR</span>
+      </div>
+      <div class="band-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        <span>Punctualitate garantată</span>
+      </div>
+      <div class="band-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064"/></svg>
+        <span>Transport național &amp; internațional</span>
+      </div>
+      <div class="band-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+        <span>Grupuri mici și mari</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════ SERVICII ══════════════════════════════ -->
+  <section id="servicii" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Ce oferim</span>
+        <h2>Serviciile noastre</h2>
+        <p>De la excursii de o zi până la transferuri internaționale, suntem alături de dvs. la fiecare pas al drumului.</p>
+      </div>
+
+      <div class="cards-grid">
+
+        <div class="card">
+          <div class="card-icon card-icon--yellow">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13" rx="1"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+          </div>
+          <h3>Transfer persoane</h3>
+          <p>Transferuri din ușă în ușă: aeroport, gară, hotel sau orice destinație din țară. Rezervare rapidă, șofer punctual.</p>
+          <ul class="card-list">
+            <li>Aeroport Henri Coandă / Otopeni</li>
+            <li>Gări și autogări</li>
+            <li>Destinații la comandă</li>
+          </ul>
+        </div>
+
+        <div class="card card--featured">
+          <div class="card-badge">Popular</div>
+          <div class="card-icon card-icon--white">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <h3>Excursii &amp; turism</h3>
+          <p>Organizăm excursii tematice și turistice pentru grupuri: mânăstiri, stațiuni montane, Delta Dunării, circuite culturale.</p>
+          <ul class="card-list">
+            <li>Excursii în țară</li>
+            <li>Pelerinaje și vizite culturale</li>
+            <li>Circuite europene</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="card-icon card-icon--yellow">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+          </div>
+          <h3>Transport grup / evenimente</h3>
+          <p>Nunți, botezuri, team building-uri, competiții sportive – asigurăm transportul grupului dvs. în condiții optime.</p>
+          <ul class="card-list">
+            <li>Evenimente private</li>
+            <li>Corporate &amp; team building</li>
+            <li>Competiții și tabere</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="card-icon card-icon--yellow">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>Închiriere microbuz cu șofer</h3>
+          <p>Puneți la dispoziție microbuzul cu șofer inclus pentru orice deplasare, pe toată durata necesară.</p>
+          <ul class="card-list">
+            <li>Tarife pe oră sau pe zi</li>
+            <li>Șofer cu experiență</li>
+            <li>Rută personalizată</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="card-icon card-icon--yellow">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></svg>
+          </div>
+          <h3>Transport internațional</h3>
+          <p>Curse regulate sau la comandă spre destinații din Europa: Italia, Spania, Germania, Franța și altele.</p>
+          <ul class="card-list">
+            <li>Europa Occidentală</li>
+            <li>Curse regulate și charter</li>
+            <li>Documente și asigurare incluse</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="card-icon card-icon--yellow">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          </div>
+          <h3>Rezervare rapidă</h3>
+          <p>Sunați sau trimiteți un mesaj pentru o ofertă personalizată în cel mai scurt timp. Fără birocrație.</p>
+          <ul class="card-list">
+            <li>Răspuns în aceeași zi</li>
+            <li>Ofertă gratuită</li>
+            <li>Flexibil la program</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════ DESPRE ══════════════════════════════ -->
+  <section id="despre" class="section section--alt">
+    <div class="container about-grid">
+      <div class="about-visual">
+        <div class="about-img-wrap">
+          <div class="about-img-placeholder">
+            <svg viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg">
+              <!-- Road -->
+              <rect x="0" y="55" width="120" height="25" fill="#374151"/>
+              <rect x="55" y="60" width="10" height="4" fill="#F59E0B" rx="1"/>
+              <rect x="55" y="68" width="10" height="4" fill="#F59E0B" rx="1"/>
+              <!-- Bus body -->
+              <rect x="15" y="30" width="90" height="28" rx="4" fill="#1E3A5F"/>
+              <!-- Windows -->
+              <rect x="22" y="35" width="12" height="10" rx="2" fill="#93C5FD"/>
+              <rect x="38" y="35" width="12" height="10" rx="2" fill="#93C5FD"/>
+              <rect x="54" y="35" width="12" height="10" rx="2" fill="#93C5FD"/>
+              <rect x="70" y="35" width="12" height="10" rx="2" fill="#93C5FD"/>
+              <rect x="86" y="35" width="12" height="10" rx="2" fill="#93C5FD"/>
+              <!-- Wheels -->
+              <circle cx="32" cy="58" r="7" fill="#111827"/>
+              <circle cx="32" cy="58" r="3" fill="#6B7280"/>
+              <circle cx="88" cy="58" r="7" fill="#111827"/>
+              <circle cx="88" cy="58" r="3" fill="#6B7280"/>
+              <!-- Sun -->
+              <circle cx="100" cy="15" r="8" fill="#F59E0B"/>
+              <line x1="100" y1="4" x2="100" y2="1" stroke="#F59E0B" stroke-width="2"/>
+              <line x1="100" y1="26" x2="100" y2="29" stroke="#F59E0B" stroke-width="2"/>
+              <line x1="89" y1="15" x2="86" y2="15" stroke="#F59E0B" stroke-width="2"/>
+              <line x1="111" y1="15" x2="114" y2="15" stroke="#F59E0B" stroke-width="2"/>
+              <!-- Mountains -->
+              <polygon points="0,55 20,25 40,55" fill="#4B5563"/>
+              <polygon points="10,55 35,20 60,55" fill="#6B7280"/>
+            </svg>
+          </div>
+          <div class="about-badge-float">
+            <strong>Activ din</strong>
+            <span>Ploiești</span>
+          </div>
+        </div>
+        <div class="about-stats">
+          <div class="stat">
+            <span class="stat-num">221K<small>lei</small></span>
+            <span class="stat-label">Cifră de afaceri 2024</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">100<small>%</small></span>
+            <span class="stat-label">Satisfacție clienți</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-content">
+        <span class="section-label">Despre noi</span>
+        <h2>O firmă locală cu<br/>servicii de calitate</h2>
+        <p class="lead">SOARE TOURING SRL este o companie de transport persoane cu sediul în Ploiești, județul Prahova, înregistrată și autorizată ca operator de transport rutier de persoane conform reglementărilor ARR.</p>
+        <p>Activăm cu responsabilitate și profesionalism, oferind servicii de transport adaptat nevoilor clienților noștri — fie că este vorba de un transfer rapid la aeroport, o excursie în grup sau o cursă internațională.</p>
+        <p>Cu experiență în domeniu și o abordare orientată spre client, ne-am câștigat reputația de partener de transport de încredere în zona Ploiești – Prahova.</p>
+        <div class="about-highlights">
+          <div class="highlight">
+            <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+            <span>Operator licențiat ARR</span>
+          </div>
+          <div class="highlight">
+            <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+            <span>Asigurare pasageri inclusă</span>
+          </div>
+          <div class="highlight">
+            <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+            <span>Vehicule verificate și întreținute</span>
+          </div>
+          <div class="highlight">
+            <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+            <span>Șofer cu experiență și certificat</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════ AVANTAJE ══════════════════════════════ -->
+  <section id="avantaje" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">De ce să ne alegeți</span>
+        <h2>Avantajele Soare Touring</h2>
+        <p>Câteva motive pentru care clienții noștri se întorc mereu la noi.</p>
+      </div>
+
+      <div class="advantages-grid">
+        <div class="advantage">
+          <div class="advantage-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h4>Siguranță maximă</h4>
+          <p>Vehicule periodic verificate tehnic, asigurate complet, cu șoferi cu experiență și certificate profesionale.</p>
+        </div>
+        <div class="advantage">
+          <div class="advantage-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <h4>Punctualitate</h4>
+          <p>Respectăm orarul stabilit. Știm că timpul dvs. este prețios și ne angajăm să fim acolo când aveți nevoie.</p>
+        </div>
+        <div class="advantage">
+          <div class="advantage-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+          </div>
+          <h4>Prețuri corecte</h4>
+          <p>Tarife transparente, fără costuri ascunse. Primiți ofertă gratuită înainte de orice angajament.</p>
+        </div>
+        <div class="advantage">
+          <div class="advantage-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+          </div>
+          <h4>Serviciu personalizat</h4>
+          <p>Fiecare client este unic. Adaptăm ruta, orarul și condițiile de transport la cerințele specifice ale fiecăruia.</p>
+        </div>
+        <div class="advantage">
+          <div class="advantage-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"/></svg>
+          </div>
+          <h4>Comunicare rapidă</h4>
+          <p>Răspundem rapid la apeluri și mesaje. Rezervarea se face simplu, fără formulare complicate.</p>
+        </div>
+        <div class="advantage">
+          <div class="advantage-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>
+          </div>
+          <h4>Acoperire națională</h4>
+          <p>Ploiești este baza noastră, dar operăm în întreaga Românie și spre destinații europene.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════ CTA BANNER ══════════════════════════════ -->
+  <section class="cta-banner">
+    <div class="container cta-inner">
+      <div class="cta-text">
+        <h2>Aveți nevoie de transport?</h2>
+        <p>Contactați-ne acum pentru o ofertă personalizată și gratuită. Suntem disponibili zilnic.</p>
+      </div>
+      <div class="cta-actions">
+        <a href="tel:+40700000000" class="btn btn-white btn-lg">
+          <svg viewBox="0 0 20 20" fill="currentColor"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/></svg>
+          +40 700 000 000
+        </a>
+        <a href="#contact" class="btn btn-outline-white btn-lg">Trimite mesaj</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════ CONTACT ══════════════════════════════ -->
+  <section id="contact" class="section section--alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Contactați-ne</span>
+        <h2>Suntem la dispoziția dvs.</h2>
+        <p>Scrieți-ne sau sunați pentru orice întrebare legată de serviciile noastre.</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- INFO -->
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            </div>
+            <div>
+              <strong>Telefon</strong>
+              <a href="tel:+40700000000">+40 700 000 000</a>
+              <span class="contact-note">Disponibil Luni–Duminică, 07:00–22:00</span>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            </div>
+            <div>
+              <strong>Email</strong>
+              <a href="mailto:contact@soartouring.ro">contact@soartouring.ro</a>
+              <span class="contact-note">Răspundem în 24 de ore</span>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            </div>
+            <div>
+              <strong>Adresă</strong>
+              <span>Ploiești, Județul Prahova</span>
+              <span class="contact-note">România</span>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M16 8a4 4 0 10-8 0v8h8V8z"/></svg>
+            </div>
+            <div>
+              <strong>Date firmă</strong>
+              <span>SOARE TOURING SRL</span>
+              <span class="contact-note">Operator transport rutier persoane</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- FORM -->
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Nume și prenume *</label>
+              <input type="text" id="name" name="name" placeholder="Ion Popescu" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Telefon *</label>
+              <input type="tel" id="phone" name="phone" placeholder="07XX XXX XXX" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="exemplu@email.com" />
+          </div>
+          <div class="form-group">
+            <label for="service">Tip serviciu</label>
+            <select id="service" name="service">
+              <option value="">-- Selectați --</option>
+              <option>Transfer persoane</option>
+              <option>Excursie / Turism</option>
+              <option>Transport grup / Eveniment</option>
+              <option>Închiriere microbuz cu șofer</option>
+              <option>Transport internațional</option>
+              <option>Altele</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Mesaj *</label>
+            <textarea id="message" name="message" rows="4" placeholder="Descrieți pe scurt cerința dvs.: destinație, număr persoane, dată..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">
+            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z"/></svg>
+            Trimite cererea
+          </button>
+          <p class="form-note">* Câmpuri obligatorii. Datele dvs. sunt confidențiale.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════ FOOTER ══════════════════════════════ -->
+  <footer id="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="logo">
+          <div class="logo-icon">
+            <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="10" fill="#F59E0B"/><line x1="24" y1="4" x2="24" y2="10" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/><line x1="24" y1="38" x2="24" y2="44" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/><line x1="4" y1="24" x2="10" y2="24" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/><line x1="38" y1="24" x2="44" y2="24" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/><line x1="9" y1="9" x2="13.5" y2="13.5" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/><line x1="34.5" y1="34.5" x2="39" y2="39" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/><line x1="39" y1="9" x2="34.5" y2="13.5" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/><line x1="13.5" y1="34.5" x2="9" y2="39" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/></svg>
+          </div>
+          <div class="logo-text">
+            <span class="logo-brand">SOARE TOURING</span>
+            <span class="logo-tagline">S.R.L.</span>
+          </div>
+        </div>
+        <p>Operator licențiat de transport rutier persoane, cu sediul în Ploiești, Prahova. Călătorii sigure, confortabile și la prețuri corecte.</p>
+      </div>
+
+      <div class="footer-links">
+        <h5>Servicii</h5>
+        <ul>
+          <li><a href="#servicii">Transfer persoane</a></li>
+          <li><a href="#servicii">Excursii &amp; turism</a></li>
+          <li><a href="#servicii">Transport grup</a></li>
+          <li><a href="#servicii">Închiriere microbuz</a></li>
+          <li><a href="#servicii">Transport internațional</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h5>Companie</h5>
+        <ul>
+          <li><a href="#despre">Despre noi</a></li>
+          <li><a href="#avantaje">De ce noi</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h5>Contact rapid</h5>
+        <a href="tel:+40700000000" class="footer-phone">
+          <svg viewBox="0 0 20 20" fill="currentColor"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/></svg>
+          +40 700 000 000
+        </a>
+        <a href="mailto:contact@soartouring.ro" class="footer-email">
+          <svg viewBox="0 0 20 20" fill="currentColor"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/></svg>
+          contact@soartouring.ro
+        </a>
+        <p class="footer-address">Ploiești, Prahova, România</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; 2025 SOARE TOURING SRL · Toate drepturile rezervate</p>
+        <p>Operator transport rutier persoane · Autorizat ARR</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ══════════════════════════════ BACK TO TOP ══════════════════════════════ -->
+  <button class="back-top" id="backTop" aria-label="Înapoi sus">
+    <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z" clip-rule="evenodd"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
 <!doctype html>
 <html lang="ro">
   <head>
