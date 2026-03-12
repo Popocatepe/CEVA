@@ -1,0 +1,104 @@
+:root {
+  --bg: #f3f6fb;
+  --card: #fff;
+  --text: #182435;
+  --muted: #5d6e86;
+  --primary: #2f6fed;
+  --primary-strong: #2355b5;
+  --danger: #c33a3a;
+  --border: #d9e3f2;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Inter, Segoe UI, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+}
+
+.hero {
+  text-align: center;
+  padding: 2rem 1rem 1.2rem;
+  background: linear-gradient(135deg, #e7eefe, #f5f8ff);
+  border-bottom: 1px solid var(--border);
+}
+
+.hero p { color: var(--muted); max-width: 62rem; margin: .6rem auto 0; }
+
+.container {
+  max-width: 1020px;
+  margin: 1rem auto 2rem;
+  padding: 0 1rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1rem;
+}
+
+.stack label { display: block; margin-bottom: .75rem; font-weight: 600; }
+input, textarea, button {
+  width: 100%;
+  margin-top: .35rem;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: .65rem .75rem;
+  font: inherit;
+}
+button {
+  font-weight: 700;
+  cursor: pointer;
+  color: #fff;
+  background: var(--primary);
+  border-color: var(--primary);
+}
+button:hover { background: var(--primary-strong); border-color: var(--primary-strong); }
+button:disabled { opacity: .5; cursor: not-allowed; }
+.secondary { background: #fff; color: var(--primary); }
+.danger { background: var(--danger); border-color: var(--danger); }
+
+.frame-list { margin: .4rem 0 0; padding-left: 1.2rem; display: grid; gap: .8rem; }
+.frame-card {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: .75rem;
+  background: #fafcff;
+}
+.frame-card.done { border-color: #96c09f; background: #f4fbf5; }
+.frame-head { display: flex; justify-content: space-between; gap: .5rem; align-items: center; flex-wrap: wrap; }
+.badge { font-size: .8rem; border-radius: 999px; padding: .2rem .6rem; background: #eef3ff; color: #264e9c; }
+.badge.done { background: #e4f5e7; color: #2a6a35; }
+
+.actions, .audio-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .6rem;
+  margin-top: .7rem;
+}
+.actions button, .audio-controls button { flex: 1 1 220px; }
+
+.question-box {
+  border: 1px dashed var(--border);
+  border-radius: 12px;
+  padding: .8rem;
+  background: #f8fbff;
+}
+.question { font-weight: 700; }
+.hint { color: var(--muted); }
+.hidden { display: none; }
+
+.photo-preview {
+  width: 100%;
+  max-height: 380px;
+  object-fit: contain;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: #fff;
+  margin-bottom: .8rem;
+}
